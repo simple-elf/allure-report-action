@@ -1,5 +1,9 @@
 name: 'Allure Report with history'
 description: 'Generate Allure Report with history'
+author: 'simple-elf'
+branding:
+  icon: 'layout'
+  color: 'green'
 inputs:
   allure_results:
     description: 'Allure test result data dir'
