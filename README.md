@@ -66,7 +66,7 @@ Default ``
 
 ```yaml
 - name: Test local action
-  uses: simple-elf/allure-report-action@v1
+  uses: simple-elf/allure-report-action@v1.1
   if: always()
   id: allure-report
   with:
