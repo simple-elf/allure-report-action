@@ -1,0 +1,50 @@
+name: 'Allure Report with history'
+description: 'Generate Allure Report with history'
+inputs:
+  allure_results:
+    description: 'Allure test result data dir'
+    required: true
+    default: 'allure-results'
+  allure_report:
+    description: 'Allure report target dir'
+    required: true
+    default: 'allure-report'
+  allure_version:
+    description: 'Allure commandline version'
+    required: true
+    default: '2.13.4'
+  gh_pages:
+    description: 'Folder with gh-pages branch'
+    required: true
+    default: 'gh-pages'
+  allure_history:
+    description: 'Folder for allure history'
+    required: true
+    default: 'allure-history'
+  subfolder:
+    description: 'subfolder'
+    required: false
+    default: ''
+  github_run_num:
+    description: 'GitHub Actions build number'
+    required: true
+    default: ${{ github.run_number }}
+  github_run_id:
+    description: 'GitHub Actions run id'
+    required: true
+    default: ${{ github.run_id }}
+  github_repo:
+    description: 'GitHub repository'
+    required: true
+    default: ${{ github.repository }}
+  github_repo_owner:
+    description: 'GitHub repository owner'
+    required: true
+    default: ${{ github.repository_owner }}
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  #args:
+  #  - --build-arg RELEASE=${{ inputs.allure_version }}
+  #  - ${{ inputs.results-dir }}
+  #  - ${{ inputs.report-dir }}
