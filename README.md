@@ -8,19 +8,19 @@ Example workflow file in [allure-examples](https://github.com/simple-elf/allure-
 
 ### `allure_results`
 
-**Required** The path to the Allure results directory. 
+**Required** The relative path to the Allure results directory. 
 
 Default `allure-results`
 
 ### `allure_report`
 
-**Required** The path to the directory where Allure will write the generated report. 
+**Required** The relative path to the directory where Allure will write the generated report. 
 
 Default `allure-report`
 
 ### `gh_pages`
 
-**Required** The path to the `gh-pages` branch folder. On first run this folder can be empty.
+**Required** The relative path to the `gh-pages` branch folder. On first run this folder can be empty.
 Also, you need to do a checkout of `gh-pages` branch, even it doesn't exist yet.
 
 Default `gh-pages`
@@ -37,7 +37,7 @@ Default `gh-pages`
 
 ### `allure_history`
 
-**Required** The path to the folder, that will be published to GitHub Pages.
+**Required** The relative path to the folder, that will be published to GitHub Pages.
 
 Default `allure-history`
 
@@ -56,7 +56,7 @@ Default ``
   if: always()
   id: allure-report
   with:
-    allure_results: ./target/allure-results
+    allure_results: target/allure-results
     gh_pages: gh-pages
     allure_report: allure-report
     allure_history: allure-history
@@ -70,7 +70,7 @@ Default ``
   if: always()
   id: allure-report
   with:
-    allure_results: ./build/allure-results
+    allure_results: build/allure-results
     gh_pages: gh-pages
     allure_report: allure-report
     allure_history: allure-history
