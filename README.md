@@ -2,7 +2,7 @@
 
 Generates Allure Report with history.
 
-Example workflow file in [allure-examples](https://github.com/simple-elf/allure-examples/blob/master/.github/workflows/maven-junit5.yml) project
+Example workflow file [allure-report](https://github.com/simple-elf/allure-report-action/blob/master/.github/workflows/allure-report.yml)
 
 ## Inputs
 
@@ -56,7 +56,7 @@ Default ``
   if: always()
   id: allure-report
   with:
-    allure_results: target/allure-results
+    allure_results: build/allure-results
     gh_pages: gh-pages
     allure_report: allure-report
     allure_history: allure-history
@@ -65,8 +65,8 @@ Default ``
 ## Example usage (github action)
 
 ```yaml
-- name: Test local action
-  uses: simple-elf/allure-report-action@v1.1
+- name: Test marketplace action
+  uses: simple-elf/allure-report-action@master
   if: always()
   id: allure-report
   with:
@@ -83,7 +83,7 @@ Default ``
   if: always()
   uses: peaceiris/actions-gh-pages@v2
   env:
-    PERSONAL_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+    PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     PUBLISH_BRANCH: gh-pages
     PUBLISH_DIR: allure-history
 ```
