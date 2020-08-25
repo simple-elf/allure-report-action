@@ -1,0 +1,192 @@
+{
+  "uid" : "abbc23343847cadb",
+  "name" : "Create issue via api",
+  "fullName" : "io.eroshenkoam.allure.IssuesRestTest.shouldCreateUserNote",
+  "historyId" : "d009a4d6378fb7bf055f6f35bf5acaf1",
+  "time" : {
+    "start" : 1596783485835,
+    "stop" : 1596783485836,
+    "duration" : 1
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Create issue with title `Second Note`",
+      "time" : {
+        "start" : 1596783485836,
+        "stop" : 1596783485836,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST /repos/allure-framework/allure2/issues",
+        "time" : {
+          "start" : 1596783485836,
+          "stop" : 1596783485836,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "owner",
+        "value" : "allure-framework"
+      }, {
+        "name" : "repo",
+        "value" : "allure2"
+      }, {
+        "name" : "title",
+        "value" : "Second Note"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check note with content `Second Note` exists",
+      "time" : {
+        "start" : 1596783485836,
+        "stop" : 1596783485836,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "GET /repos/allure-framework/allure2/issues?text=Second Note",
+        "time" : {
+          "start" : 1596783485836,
+          "stop" : 1596783485836,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET /repos/allure-framework/allure2/issues/10",
+        "time" : {
+          "start" : 1596783485836,
+          "stop" : 1596783485836,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "owner",
+        "value" : "allure-framework"
+      }, {
+        "name" : "repo",
+        "value" : "allure2"
+      }, {
+        "name" : "title",
+        "value" : "Second Note"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "api"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "layer",
+    "value" : "rest"
+  }, {
+    "name" : "owner",
+    "value" : "baev"
+  }, {
+    "name" : "url",
+    "value" : "/repos/{owner}/{repo}/issues"
+  }, {
+    "name" : "feature",
+    "value" : "Issues"
+  }, {
+    "name" : "story",
+    "value" : "Create new issue"
+  }, {
+    "name" : "host",
+    "value" : "ELF-PC"
+  }, {
+    "name" : "thread",
+    "value" : "22744@ELF-PC.ForkJoinPool-1-worker-4(15)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "io.eroshenkoam.allure.IssuesRestTest"
+  }, {
+    "name" : "testClass",
+    "value" : "io.eroshenkoam.allure.IssuesRestTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldCreateUserNote"
+  }, {
+    "name" : "suite",
+    "value" : "io.eroshenkoam.allure.IssuesRestTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "owner",
+    "value" : "allure-framework"
+  }, {
+    "name" : "repo",
+    "value" : "allure2"
+  }, {
+    "name" : "title",
+    "value" : "Second Note"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "baev",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "smoke", "api" ]
+  },
+  "source" : "abbc23343847cadb.json",
+  "parameterValues" : [ "allure-framework", "allure2", "Second Note" ]
+}
