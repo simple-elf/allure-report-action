@@ -16,7 +16,7 @@ inputs:
   allure_version:
     description: 'Allure commandline version'
     required: true
-    default: '2.13.4'
+    default: '2.13.6'
   gh_pages:
     description: 'Folder with gh-pages branch'
     required: true
