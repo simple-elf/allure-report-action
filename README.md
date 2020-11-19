@@ -76,7 +76,7 @@ Default ``
     allure_history: allure-history
 ```
 
-## Finnaly you need to publish on GitHub Pages
+## Finally you need to publish on GitHub Pages
 
 ```yaml
 - name: Deploy report to Github Pages
