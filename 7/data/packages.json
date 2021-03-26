@@ -1,0 +1,138 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "io.eroshenkoam.allure",
+    "children" : [ {
+      "name" : "IssuesWebTest",
+      "children" : [ {
+        "name" : "shouldCloseIssue",
+        "uid" : "1b13161b780ea6d7",
+        "parentUid" : "8f70829c464f428524f6568cae1397fd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596783485736,
+          "stop" : 1596783486785,
+          "duration" : 1049
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldAddLabelToIssue",
+        "uid" : "3b49db4931d71b1d",
+        "parentUid" : "8f70829c464f428524f6568cae1397fd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596783485736,
+          "stop" : 1596783486785,
+          "duration" : 1049
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldCreateIssue",
+        "uid" : "287ebdfc359e8e78",
+        "parentUid" : "8f70829c464f428524f6568cae1397fd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596783485841,
+          "stop" : 1596783486843,
+          "duration" : 1002
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8f70829c464f428524f6568cae1397fd"
+    }, {
+      "name" : "IssuesRestTest",
+      "children" : [ {
+        "name" : "shouldCreateUserNote",
+        "uid" : "1ea5a013b507dd47",
+        "parentUid" : "9fd63ca5a47b9e84468cbe6b0821c497",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596783485736,
+          "stop" : 1596783485766,
+          "duration" : 30
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "allure-framework", "allure2", "First Note" ]
+      }, {
+        "name" : "shouldDeleteUserNote",
+        "uid" : "1d03edd82deea931",
+        "parentUid" : "9fd63ca5a47b9e84468cbe6b0821c497",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596783485736,
+          "stop" : 1596783485766,
+          "duration" : 30
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "allure-framework", "allure2", "First Note" ]
+      }, {
+        "name" : "shouldCreateUserNote",
+        "uid" : "7be39d368950a4fd",
+        "parentUid" : "9fd63ca5a47b9e84468cbe6b0821c497",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596783485835,
+          "stop" : 1596783485836,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "allure-framework", "allure2", "Second Note" ]
+      }, {
+        "name" : "shouldDeleteUserNote",
+        "uid" : "61f3316db6dfc9a6",
+        "parentUid" : "9fd63ca5a47b9e84468cbe6b0821c497",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596783485836,
+          "stop" : 1596783485836,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "allure-framework", "allure2", "Second Note" ]
+      } ],
+      "uid" : "9fd63ca5a47b9e84468cbe6b0821c497"
+    }, {
+      "name" : "PullRequestsWebTest",
+      "children" : [ {
+        "name" : "shouldClosePullRequest",
+        "uid" : "3737d89287c180ba",
+        "parentUid" : "7b2619394c8462a7c1b9481f4bbe72ff",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596783485736,
+          "stop" : 1596783487784,
+          "duration" : 2048
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldCreatePullRequest",
+        "uid" : "8a7ccc3a09ad85c3",
+        "parentUid" : "7b2619394c8462a7c1b9481f4bbe72ff",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596783485736,
+          "stop" : 1596783487784,
+          "duration" : 2048
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7b2619394c8462a7c1b9481f4bbe72ff"
+    } ],
+    "uid" : "io.eroshenkoam.allure"
+  } ],
+  "name" : "packages"
+}

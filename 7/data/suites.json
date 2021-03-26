@@ -1,0 +1,134 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "io.eroshenkoam.allure.IssuesWebTest",
+    "children" : [ {
+      "name" : "Close new issue for authorized user",
+      "uid" : "1b13161b780ea6d7",
+      "parentUid" : "db28732f2e4f362acd8d04e5397850d2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596783485736,
+        "stop" : 1596783486785,
+        "duration" : 1049
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Create new issue with labels",
+      "uid" : "3b49db4931d71b1d",
+      "parentUid" : "db28732f2e4f362acd8d04e5397850d2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596783485736,
+        "stop" : 1596783486785,
+        "duration" : 1049
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Create new issue authorized user",
+      "uid" : "287ebdfc359e8e78",
+      "parentUid" : "db28732f2e4f362acd8d04e5397850d2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596783485841,
+        "stop" : 1596783486843,
+        "duration" : 1002
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "db28732f2e4f362acd8d04e5397850d2"
+  }, {
+    "name" : "io.eroshenkoam.allure.IssuesRestTest",
+    "children" : [ {
+      "name" : "Create issue via api",
+      "uid" : "1ea5a013b507dd47",
+      "parentUid" : "a177520f68eac8395295b1f721427753",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596783485736,
+        "stop" : 1596783485766,
+        "duration" : 30
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "allure-framework", "allure2", "First Note" ]
+    }, {
+      "name" : "Close issue via api",
+      "uid" : "1d03edd82deea931",
+      "parentUid" : "a177520f68eac8395295b1f721427753",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596783485736,
+        "stop" : 1596783485766,
+        "duration" : 30
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "allure-framework", "allure2", "First Note" ]
+    }, {
+      "name" : "Create issue via api",
+      "uid" : "7be39d368950a4fd",
+      "parentUid" : "a177520f68eac8395295b1f721427753",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596783485835,
+        "stop" : 1596783485836,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "allure-framework", "allure2", "Second Note" ]
+    }, {
+      "name" : "Close issue via api",
+      "uid" : "61f3316db6dfc9a6",
+      "parentUid" : "a177520f68eac8395295b1f721427753",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596783485836,
+        "stop" : 1596783485836,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "allure-framework", "allure2", "Second Note" ]
+    } ],
+    "uid" : "a177520f68eac8395295b1f721427753"
+  }, {
+    "name" : "io.eroshenkoam.allure.PullRequestsWebTest",
+    "children" : [ {
+      "name" : "Close existing pull request for authorized user",
+      "uid" : "3737d89287c180ba",
+      "parentUid" : "51d8c011203cd16921cfee65110e539f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596783485736,
+        "stop" : 1596783487784,
+        "duration" : 2048
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Create new pull request for authorized user",
+      "uid" : "8a7ccc3a09ad85c3",
+      "parentUid" : "51d8c011203cd16921cfee65110e539f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596783485736,
+        "stop" : 1596783487784,
+        "duration" : 2048
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "51d8c011203cd16921cfee65110e539f"
+  } ],
+  "name" : "suites"
+}
