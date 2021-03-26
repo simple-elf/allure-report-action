@@ -93,6 +93,7 @@ Default ``
 ```yaml
 - name: Post the link to the report
   if: always()
+  uses: Sibz/github-status-action@v1
   with: 
       authToken: ${{secrets.GITHUB_TOKEN}}
       context: 'Test report'
