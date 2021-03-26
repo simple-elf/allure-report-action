@@ -1,0 +1,150 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "ELF-PC",
+    "children" : [ {
+      "name" : "22744@ELF-PC.ForkJoinPool-1-worker-3(14)",
+      "children" : [ {
+        "name" : "Close new issue for authorized user",
+        "uid" : "1dc15f585de60401",
+        "parentUid" : "55a9e8800853a79273719c8b7e23581b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596783485736,
+          "stop" : 1596783486785,
+          "duration" : 1049
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "55a9e8800853a79273719c8b7e23581b"
+    }, {
+      "name" : "22744@ELF-PC.ForkJoinPool-1-worker-2(13)",
+      "children" : [ {
+        "name" : "Close issue via api",
+        "uid" : "5b00264b5850d196",
+        "parentUid" : "cc0ae37968f07b2e407bd3c67ec5819b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596783485836,
+          "stop" : 1596783485836,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "allure-framework", "allure2", "Second Note" ]
+      }, {
+        "name" : "Close issue via api",
+        "uid" : "70e2b66cdaa2700f",
+        "parentUid" : "cc0ae37968f07b2e407bd3c67ec5819b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596783485736,
+          "stop" : 1596783485766,
+          "duration" : 30
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "allure-framework", "allure2", "First Note" ]
+      } ],
+      "uid" : "cc0ae37968f07b2e407bd3c67ec5819b"
+    }, {
+      "name" : "22744@ELF-PC.ForkJoinPool-1-worker-4(15)",
+      "children" : [ {
+        "name" : "Create issue via api",
+        "uid" : "26e70c0d610afaaa",
+        "parentUid" : "424b7eb50e6325dd2c78fd2dcfde17d4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596783485835,
+          "stop" : 1596783485836,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "allure-framework", "allure2", "Second Note" ]
+      }, {
+        "name" : "Create issue via api",
+        "uid" : "379f6965b3b562cb",
+        "parentUid" : "424b7eb50e6325dd2c78fd2dcfde17d4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596783485736,
+          "stop" : 1596783485766,
+          "duration" : 30
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "allure-framework", "allure2", "First Note" ]
+      }, {
+        "name" : "Create new issue authorized user",
+        "uid" : "a35eb66ea1c8924c",
+        "parentUid" : "424b7eb50e6325dd2c78fd2dcfde17d4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596783485841,
+          "stop" : 1596783486843,
+          "duration" : 1002
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "424b7eb50e6325dd2c78fd2dcfde17d4"
+    }, {
+      "name" : "22744@ELF-PC.ForkJoinPool-1-worker-6(17)",
+      "children" : [ {
+        "name" : "Create new issue with labels",
+        "uid" : "b41a3d0fcb9da241",
+        "parentUid" : "1ed9564bb318062fad141546c111a6e1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596783485736,
+          "stop" : 1596783486785,
+          "duration" : 1049
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1ed9564bb318062fad141546c111a6e1"
+    }, {
+      "name" : "22744@ELF-PC.ForkJoinPool-1-worker-5(16)",
+      "children" : [ {
+        "name" : "Close existing pull request for authorized user",
+        "uid" : "39195cee9709bc5c",
+        "parentUid" : "0a3701d1ef264e1c480010d8ac81c849",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596783485736,
+          "stop" : 1596783487784,
+          "duration" : 2048
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0a3701d1ef264e1c480010d8ac81c849"
+    }, {
+      "name" : "22744@ELF-PC.ForkJoinPool-1-worker-1(12)",
+      "children" : [ {
+        "name" : "Create new pull request for authorized user",
+        "uid" : "d4c07a6dd4d1d9b9",
+        "parentUid" : "5ae9f4dbb5ac09ab5abfa1d81437e1af",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596783485736,
+          "stop" : 1596783487784,
+          "duration" : 2048
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5ae9f4dbb5ac09ab5abfa1d81437e1af"
+    } ],
+    "uid" : "e632a7eb3615a218651e8a9fe2a36908"
+  } ],
+  "name" : "timeline"
+}
