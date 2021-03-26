@@ -87,3 +87,16 @@ Default ``
     PUBLISH_BRANCH: gh-pages
     PUBLISH_DIR: allure-history
 ```
+
+## Also you can post the link to the report in the checks section
+
+```yaml
+- name: Post the link to the report
+  if: always()
+  with: 
+      authToken: ${{secrets.GITHUB_TOKEN}}
+      context: 'Test report'
+      state: 'success'
+      sha: ${{ github.event.pull_request.head.sha }}
+      target_url: simple-elf.github.io/github-allure-history/${{ github.run_number }}
+```
