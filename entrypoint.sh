@@ -22,8 +22,8 @@ fi
 
 echo "count folders in allure-history"
 echo $( ( ls ./${INPUT_ALLURE_HISTORY} | wc -l ) )
-echo "keep reports count ${INPUT_KEEP_REPORTS} $((INPUT_KEEP_REPORTS+2))"
-if [[ $((INPUT_KEEP_REPORTS+2)) < $( ( ls ./${INPUT_ALLURE_HISTORY} | wc -l ) ) ]]; then
+echo "keep reports count ${INPUT_KEEP_REPORTS} $((INPUT_KEEP_REPORTS+1))"
+if [[ $((INPUT_KEEP_REPORTS+1)) < $( ( ls ./${INPUT_ALLURE_HISTORY} | wc -l ) ) ]]; then
   cd ./${INPUT_ALLURE_HISTORY}
   echo "remove index.html last-history"
   rm index.html last-history -rv
