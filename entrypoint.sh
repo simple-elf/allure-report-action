@@ -13,10 +13,23 @@ GITHUB_PAGES_WEBSITE_URL="https://${INPUT_GITHUB_REPO_OWNER}.github.io/${REPOSIT
 
 if [[ ${INPUT_SUBFOLDER} != '' ]]; then
     INPUT_ALLURE_HISTORY="${INPUT_ALLURE_HISTORY}/${INPUT_SUBFOLDER}"
+    INPUT_GH_PAGES="${INPUT_GH_PAGES}/${INPUT_SUBFOLDER}"
     echo "NEW allure history folder ${INPUT_ALLURE_HISTORY}"
     mkdir -p ./${INPUT_ALLURE_HISTORY}
     GITHUB_PAGES_WEBSITE_URL="${GITHUB_PAGES_WEBSITE_URL}/${INPUT_SUBFOLDER}"
     echo "NEW github pages url ${GITHUB_PAGES_WEBSITE_URL}"
+fi
+
+echo "count folders in allure-history"
+echo $( ( ls ./${INPUT_ALLURE_HISTORY} | wc -l ) )
+echo "keep reports count ${INPUT_KEEP_REPORTS} $((INPUT_KEEP_REPORTS+2))"
+if [[ $((INPUT_KEEP_REPORTS+2)) < $( ( ls ./${INPUT_ALLURE_HISTORY} | wc -l ) ) ]]; then
+  cd ./${INPUT_ALLURE_HISTORY}
+  echo "remove index.html last-history"
+  rm index.html last-history -rv
+  echo "remove old reports"
+  ls | sort -n | head -n -$((${INPUT_KEEP_REPORTS}-1)) | xargs rm -rv;
+  cd ..
 fi
 
 #echo "index.html"
@@ -34,13 +47,11 @@ echo "\"buildName\":\"GitHub Actions Run #${INPUT_GITHUB_RUN_ID}\",\"buildOrder\
 mv ./executor.json ./${INPUT_ALLURE_RESULTS}
 
 #environment.properties
-echo "GITHUB_PAGES_URL=${GITHUB_PAGES_WEBSITE_URL}" >> environment.properties
+echo "URL=${GITHUB_PAGES_WEBSITE_URL}" > environment.properties
 mv ./environment.properties ./${INPUT_ALLURE_RESULTS}
 
-echo "keep allure history from ${INPUT_ALLURE_HISTORY}/last-history to ${INPUT_ALLURE_RESULTS}/history"
-cp -r ./${INPUT_ALLURE_HISTORY}/last-history/. ./${INPUT_ALLURE_RESULTS}/history
-
-#echo "version ${INPUT_ALLURE_VERSION}"
+echo "keep allure history from ${INPUT_GH_PAGES}/last-history to ${INPUT_ALLURE_RESULTS}/history"
+cp -r ./${INPUT_GH_PAGES}/last-history/. ./${INPUT_ALLURE_RESULTS}/history
 
 echo "generating report from ${INPUT_ALLURE_RESULTS} to ${INPUT_ALLURE_REPORT} ..."
 #ls -l ${INPUT_ALLURE_RESULTS}
