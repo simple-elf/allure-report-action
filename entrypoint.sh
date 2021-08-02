@@ -20,6 +20,11 @@ if [[ ${INPUT_SUBFOLDER} != '' ]]; then
     echo "NEW github pages url ${GITHUB_PAGES_WEBSITE_URL}"
 fi
 
+if [[ ${INPUT_REPORT_URL} != '' ]]; then
+    GITHUB_PAGES_WEBSITE_URL="${INPUT_REPORT_URL}"
+    echo "Replacing github pages url with user input. NEW url ${GITHUB_PAGES_WEBSITE_URL}"
+fi
+
 COUNT=$( ( ls ./${INPUT_ALLURE_HISTORY} | wc -l ) )
 echo "count folders in allure-history: ${COUNT}"
 echo "keep reports count ${INPUT_KEEP_REPORTS}"
