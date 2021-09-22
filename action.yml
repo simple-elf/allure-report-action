@@ -45,6 +45,10 @@ inputs:
     description: 'GitHub repository owner'
     required: true
     default: ${{ github.repository_owner }}
+  report_url:
+    description: 'Use a custom URL instead of *.github.io'
+    required: false
+    default: ''
 runs:
   using: 'docker'
   image: 'Dockerfile'
