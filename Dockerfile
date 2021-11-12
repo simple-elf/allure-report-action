@@ -1,6 +1,6 @@
 FROM openjdk:8-jre-alpine
 
-ARG RELEASE=2.14.0
+ARG RELEASE=2.16.1
 RUN echo $RELEASE
 ARG ALLURE_REPO=https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline
 
