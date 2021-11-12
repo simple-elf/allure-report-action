@@ -55,6 +55,10 @@ mv ./executor.json ./${INPUT_ALLURE_RESULTS}
 
 #environment.properties
 echo "URL=${GITHUB_PAGES_WEBSITE_URL}" >> environment.properties
+echo "Properties"
+cat environment.properties
+echo "OUR PROPERTIES"
+cat ./${INPUT_ALLURE_RESULTS}/environment.properties
 mv ./environment.properties ./${INPUT_ALLURE_RESULTS}
 
 echo "keep allure history from ${INPUT_GH_PAGES}/last-history to ${INPUT_ALLURE_RESULTS}/history"
