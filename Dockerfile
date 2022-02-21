@@ -5,7 +5,7 @@ ARG RELEASE=2.14.0 \
 
 RUN echo $RELEASE && \
     apk update && \
-    apk --noadd bash wget unzip && \
+    apk bash wget unzip && \
     rm -rf /var/cache/apk/*
 
 RUN wget --no-verbose -O /tmp/allure-$RELEASE.tgz $ALLURE_REPO/$RELEASE/allure-commandline-$RELEASE.tgz && \
