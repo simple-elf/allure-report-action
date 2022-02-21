@@ -14,7 +14,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      
+      - name: GitHub Action for pytest
+        uses: cclauss/GitHub-Action-for-pytest@0.5.0
 
+      
       - name: Get Allure history
         uses: actions/checkout@v2
         if: always()
