@@ -4,7 +4,7 @@ Generates Allure Report with history.
 
 Example workflow file [allure-report](https://github.com/simple-elf/allure-report-action/blob/master/.github/workflows/allure-report.yml)
 
-## Inputs
+## Inputs111
 
 ### `allure_results`
 
