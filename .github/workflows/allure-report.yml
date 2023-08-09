@@ -24,7 +24,7 @@ jobs:
           path: gh-pages
 
       - name: Allure Report action from marketplace
-        uses: simple-elf/allure-report-action@master
+        uses: techcloud0-actions/allure-report-action@master
         if: always()
         #id: allure-report
         with:
@@ -36,7 +36,7 @@ jobs:
 
       - name: Deploy report to Github Pages
         if: always()
-        uses: peaceiris/actions-gh-pages@v3
+        uses: techcloud0-actions/actions-gh-pages@main
         env:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_BRANCH: gh-pages
