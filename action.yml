@@ -49,6 +49,10 @@ inputs:
     description: 'Use a custom URL instead of *.github.io'
     required: false
     default: ''
+  github_server_url:
+    description: 'GitHub server URL'
+    required: true
+    default: ${{ github.server_url }}
 runs:
   using: 'docker'
   image: 'Dockerfile'
