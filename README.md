@@ -76,6 +76,22 @@ Default ``
     allure_history: allure-history
 ```
 
+## Example usage (build to publish on different repo)
+
+```yaml
+- name: Test here and host elsewhere
+  uses: simple-elf/allure-report-action@master
+  if: always()
+  id: allure-report
+  with:
+    allure_results: build/allure-results
+    gh_pages: gh-pages
+    allure_report: allure-report
+    allure_history: allure-history
+    github_repo: your-org/allure-reports-host-server
+    github_repo_owner: your-org
+```
+
 ## Finally you need to publish on GitHub Pages
 
 ```yaml
