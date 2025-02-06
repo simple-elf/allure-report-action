@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Allure Report action from repo
-        uses: ./action.yml
+        uses: ./
         #id: allure-report
         with:
           allure_results: allure-results
