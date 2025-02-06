@@ -1,4 +1,4 @@
-name: allure-report
+name: allure-report-pr
 
 on:
   pull_request:
