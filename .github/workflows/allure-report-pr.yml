@@ -9,11 +9,10 @@ jobs:
     name: Check Allure Report Action on Pull Request
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
-      - name: Allure Report action from marketplace
-        uses: simple-elf/allure-report-action@master
-        if: always()
+      - name: Allure Report action from repo
+        uses: ./action.yml
         #id: allure-report
         with:
           allure_results: allure-results
