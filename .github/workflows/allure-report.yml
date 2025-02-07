@@ -1,4 +1,7 @@
+# NOTE: This workflow requires that the current repo have a branch 'gh-pages' to hold the github pages source
+
 name: allure-report
+description: Performs a test deployment of Allure Report with history
 
 on:
   release:
@@ -13,31 +16,26 @@ jobs:
     name: Generate Allure Report
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
       - name: Get Allure history
-        uses: actions/checkout@v2
-        if: always()
+        uses: actions/checkout@v4
         continue-on-error: true
         with:
           ref: gh-pages
           path: gh-pages
 
-      - name: Allure Report action from marketplace
-        uses: simple-elf/allure-report-action@master
-        if: always()
-        #id: allure-report
+      - name: Allure Report action from repo
+        uses: ./
         with:
           allure_results: allure-results
-          #gh_pages: gh-pages
-          #allure_report: allure-report
           allure_history: allure-history
           keep_reports: 20
 
       - name: Deploy report to Github Pages
-        if: always()
-        uses: peaceiris/actions-gh-pages@v2
-        env:
-          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: allure-history
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: allure-history
