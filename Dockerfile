@@ -5,7 +5,7 @@ ARG ALLURE_REPO=https://repo.maven.apache.org/maven2/io/qameta/allure/allure-com
 
 RUN echo $RELEASE && \
     yum update && \
-    yum -y install wget unzip && \
+    yum -y install tar wget unzip && \
     rm -rf /var/cache/yum/*
 
 RUN wget --no-verbose -O /tmp/allure-$RELEASE.tgz $ALLURE_REPO/$RELEASE/allure-commandline-$RELEASE.tgz && \
