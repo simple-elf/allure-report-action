@@ -1,6 +1,6 @@
 FROM public.ecr.aws/amazoncorretto/amazoncorretto:8
 
-ARG RELEASE=2.32.0
+ARG RELEASE=2.42.0
 ARG ALLURE_REPO=https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline
 
 RUN echo $RELEASE && \
